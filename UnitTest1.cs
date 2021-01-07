@@ -18,7 +18,7 @@ namespace TestGoogle
         {
             var options = new ChromeOptions();
             options.AddArgument("no-sandbox");
-            options.AddArgument("--headless");
+            //options.AddArgument("--headless");
             driver = new ChromeDriver(options);
             driver.Manage().Window.Maximize();
             driver.Navigate().GoToUrl(urlBase);
